@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import { firebaseConnect } from 'react-redux-firebase';
 import { notifyUser } from '../../actions/notifyActions';
 import Alert from '../layout/Alert';
+import image from './1.png';
 
 class Login extends Component {
   state = {
@@ -38,7 +39,7 @@ class Login extends Component {
     const { message, messageType } = this.props.notify;
     return (
       <div className="row">
-        <div className="col-md-6 mx-auto">
+        <div className="col-md-4 mx-auto">
           <div className="card">
             <div className="card-body">
               {message ? (
@@ -46,7 +47,7 @@ class Login extends Component {
               ) : null}
               <h1 className="text-center pb-4 pt-3">
                 <span className="text-primary">
-                  <i className="fas fa-lock" /> Register
+                  <img src={image} />
                 </span>
               </h1>
               <form onSubmit={this.onSubmit}>
@@ -74,8 +75,8 @@ class Login extends Component {
                 </div>
                 <input
                   type="submit"
-                  value="Register"
-                  className="btn btn-primary btn-block"
+                  value="Sing-Up"
+                  className="btn btn-danger btn-block"
                 />
               </form>
             </div>
