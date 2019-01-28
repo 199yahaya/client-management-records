@@ -35,7 +35,7 @@ class AppNavbar extends Component {
     const { allowRegistration } = this.props.settings;
 
     return (
-      <nav className="navbar navbar-expand-sm navbar-dark bg-primary p-0  mb-4">
+      <nav className="navbar navbar-expand-sm navbar-dark bg-danger p-0  mb-4">
         <div className="container">
           <Link to="/" className="navbar-brand">
             <img src={image} style={{ height: '70px' }} />
@@ -101,11 +101,11 @@ class AppNavbar extends Component {
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
                   <Link to="/login" className="nav-link">
-                    {' '}<i className="fas fa-sign-in-alt"></i>
-                  </Link>
+                    Log In {' '}<i className="fas fa-sign-in-alt"></i>
+                  </Link> {' '}
                 </li>
                 <li className="nav-item">
-                  <Link to="/register" className="nav-link  btn btn-primary">
+                  <Link to="/register" className="nav-link  btn btn-danger">
                     Sing Up
                   </Link>
                 </li>

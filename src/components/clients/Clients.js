@@ -39,7 +39,7 @@ class Clients extends Component {
             <div className="col-md-6">
               <div className="card text-center bg-info text-white mb-3">
                 <div className="card-body">
-                  <h3>Registered Clients</h3>
+                  <h3>Available Clients</h3>
                   <h4 className="display-4">
                     {clients.length}
                   </h4>
@@ -65,8 +65,8 @@ class Clients extends Component {
             </div>
           </div>
 
-          <table className="table table-striped  table-hover">
-            <thead className="thead-inverse">
+          <table className="table table-striped table-info   table-hover">
+            <thead className="thead bg-danger text-white">
               <tr>
                 <th>Name</th>
                 <th>Email</th>
@@ -85,9 +85,9 @@ class Clients extends Component {
                   <td>
                     <Link
                       to={`/client/${client.id}`}
-                      className="btn btn-secondary btn-sm"
+                      className="btn btn-info btn-sm"
                     >
-                      <i className="fas fa-arrow-circle-right" /> Details
+                      <i className="fas fa-info-circle" /> Details
                     </Link>
                   </td>
                 </tr>

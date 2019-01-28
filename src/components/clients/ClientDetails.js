@@ -83,10 +83,11 @@ class ClientDetails extends Component {
             <div className="col-md-6">
               <div className="btn-group float-right">
                 <Link to={`/client/edit/${client.id}`} className="btn btn-dark">
+                  <i className="fas fa-user-edit"></i> {'  '}
                   Edit
                 </Link>
                 <button onClick={this.onDeleteClick} className="btn btn-danger">
-                  Delete
+                  <i className="fas fa-trash-alt"></i> {'  '}  Delete
                 </button>
               </div>
             </div>
@@ -99,10 +100,10 @@ class ClientDetails extends Component {
             <div className="card-body">
               <div className="row">
                 <div className="col-md-8 col-sm-6">
-                  <h4>
+                  {/* <h4>
                     Client ID:{' '}
                     <span className="text-secondary">{client.id}</span>
-                  </h4>
+                  </h4> */}
                 </div>
                 <div className="col-md-4 col-sm-6">
                   <h3 className="pull-right">
@@ -117,7 +118,7 @@ class ClientDetails extends Component {
                     </span>{' '}
                     <small>
                       <a
-                        href="#!"
+
                         onClick={() =>
                           this.setState({
                             showBalanceUpdate: !this.state.showBalanceUpdate

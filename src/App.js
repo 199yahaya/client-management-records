@@ -6,6 +6,7 @@ import { Provider } from 'react-redux';
 import store from './store';
 
 import AppNavbar from './components/layout/AppNavbar';
+import Footer from './components/layout/Footer';
 import Dashboard from './components/layout/Dashboard';
 import AddClient from './components/clients/AddClient';
 import EditClient from './components/clients/EditClient';
@@ -61,6 +62,7 @@ class App extends Component {
                   component={UserIsAuthenticated(Settings)}
                 />
               </Switch>
+              <Footer />
             </div>
           </div>
         </Router>

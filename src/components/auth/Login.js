@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { firebaseConnect } from 'react-redux-firebase';
 import { notifyUser } from '../../actions/notifyActions';
 import Alert from '../layout/Alert';
-import image from './2.png';
+import image from './1.png';
 class Login extends Component {
   state = {
     email: '',
@@ -32,7 +32,7 @@ class Login extends Component {
     const { message, messageType } = this.props.notify;
     return (
       <div className="row">
-        <div className="col-md-6 mx-auto">
+        <div className="col-md-4 mx-auto">
           <div className="card">
             <div className="card-body">
               {message ? (
@@ -69,7 +69,7 @@ class Login extends Component {
                 <input
                   type="submit"
                   value="Login"
-                  className="btn btn-primary btn-block"
+                  className="btn btn-danger btn-block"
                 />
               </form>
             </div>
